@@ -1,0 +1,33 @@
+var n,ix,i,j,temp;
+list arr[200];
+begin
+	read(n);
+	ix:=0;
+	while ix<n do
+	begin
+		read(arr[ix]);
+		ix:=ix+1
+	end;
+	i:=0;
+	while i<n do
+	begin
+		j:=i+1;
+		while j<n do
+		begin
+			if arr[i]>arr[j] then
+			begin
+				temp:=arr[i];
+				arr[i]:=arr[j];
+				arr[j]:=temp
+			end;
+			j:=j+1
+		end;
+		i:=i+1
+	end;
+	ix:=0;
+	while ix<n do
+	begin
+		write(arr[ix]);
+		ix:=ix+1
+	end
+end.

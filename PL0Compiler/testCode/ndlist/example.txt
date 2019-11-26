@@ -1,0 +1,14 @@
+var i,j,count;
+list arr[10][100];
+begin
+	count:=0;
+	for i:=0 when i<10 change i:=i+1 do
+		for j:=0 when j<100 change j:=j+1 do
+		begin
+			arr[i][j]:=count;
+			count:=count+1
+		end;
+	for i:=0 when i<10 change i:=i+1 do
+		for j:=0 when j<100 change j:=j+1 do
+			write(arr[i][j])
+end.

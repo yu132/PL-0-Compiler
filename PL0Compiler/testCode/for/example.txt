@@ -1,0 +1,9 @@
+var x,y;
+begin
+    for x:=0,y:=0 when x<100 change x:=x+1 do 
+	begin
+		y:=y+x;
+		x:=x+1
+	end;
+	write(x,y)
+end.

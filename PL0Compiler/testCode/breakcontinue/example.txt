@@ -1,0 +1,76 @@
+const s=0;
+var x,y;
+begin
+
+	(*test flag in for*)
+	for x:=0 when x<100 change x:=x+1 flag a do 
+		for y:=0 when y<100 change y:=y+1 do
+		begin
+			if x<50 and y<50 then
+			begin
+				write(x,y);
+				continue
+			end;
+			if x>=50 and x<60 then
+			begin
+				write(x,y);
+				continue a
+			end;
+			if x>=60 and x<70 then
+			begin
+				write(x,y);
+				break
+			end;
+			
+			if x=70 then
+			begin
+				write(x,y);
+				break a
+			end;
+			
+			write(s);
+			break
+		end
+
+	(*test for break and continue*)
+    (*for x:=0 when x<100 change x:=x+1 do 
+	begin
+		if x<50 then
+			continue;
+		if x=90 then
+			break;
+		write(x)
+	end*)
+	
+	(*test while break and continue*)
+	(*x:=0;
+	while x<100 do
+	begin
+	
+		x:=x+1;
+		if x<50 then
+			continue;
+		if x=90 then
+			break;
+		write(x)
+		
+	end*)
+	
+	(*test repeat break and continue*)
+	(*x:=0;
+	repeat do
+	begin
+	
+		x:=x+1;
+		if x<50 then
+			continue;
+		if x=90 then
+			break;
+		write(x)
+		
+	end
+	until x=100*)
+	
+	
+	
+end.
